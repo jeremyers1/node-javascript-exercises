@@ -15,7 +15,7 @@ const palindromes = function (str) {
     */
     
     // Can I chain them?
-    str = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+    str = str.replace(/['!"#$%&\\'()\*+,\-\.\/:;<=>?@\[\\\]\^_`{|}~']/g, '')
              .replace(/\s+/g, '')
              .toLowerCase();
 
